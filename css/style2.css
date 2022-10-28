@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Amatic SC', cursive;
+}
+
+.chul{
+    display: none;
+}
+
+body{
+    background-color: rgba(121, 121, 121, 0.685);
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    color: black;
+    box-shadow: 5px 2px 5px rgba(0,0,0,0.448);
+}
+.logo{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 52px;
+    margin-left: 10px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 8px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-family: 700;
+}
+nav label{
+    float: right;
+}
+nav label i{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+nav label .fa-brands{
+    display: none;
+}
+
+.activo, .a:hover{
+    background-color: rgb(170, 170, 170);
+    transform: .3s;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: next 10s infinite;
+    animation-direction: alternate;
+}
+
+.slider ul li{
+    width: 100%;
+}
+
+.slider ul li img{
+    width: 100%;
+}
+
+@keyframes next {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+
+.entrada{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 20px 50px 20px;
+}
+
+.entrada h2{
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.contenedorc{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedorc .card{
+    background: rgb(255, 255, 255);
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.contenedorc .card .card-img{
+    height: 220px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    color: black;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+
+.card a:hover{
+    font-size: 20px;
+}
+
+.contenedorc .card .card-img:hover{
+    height: 240px;
+}
+
+.car-1{
+    background-image: url(imagenes/bmw320i.jpeg);
+}
+
+.car-2{
+    background-image: url(imagenes/fordescape.jpg) ;
+}
+
+.car-3{
+    background-image: url(imagenes/hondacivic1994.jpg) ;
+}
+
+.car-4{
+    background-image: url(imagenes/kiacerato.jpg) ;
+}
+
+.car-5{
+    background-image: url(imagenes/kiapicanto.jpg) ;
+}
+
+.car-6{
+    background-image: url(imagenes/suzukivitara.jpeg) ;
+}
+
+.car-7{
+    background-image: url(imagenes/toyotaprado.jpg) ;
+}
+
+.car-8{
+    background-image: url(imagenes/trackker2016.jpeg) ;
+}
+
+
+.con{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.con h2{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+}
+.con h2 a{
+    color: black;
+}
+
+.con h2:hover{
+    width: 250px;
+    height: 70px;
+    padding: 20px;
+}
+
+.footer{
+    background-color: white;
+    width: 100%;
+    padding: 40px;
+}
+
+.footer a{
+    color: black;
+    font-size: 15px;
+}
+
+
+
+@media(max-width: 600px){
+    nav ul li{
+    display: flex;
+    margin-left: 20x;
+}
+
+nav #check{
+    display: none;
+}
+
+nav ul{
+    float: left;
+    margin-top: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: -100%;
+    transition: all ease .5s;
+} 
+nav label .fa-brands{
+    display: block;
+    margin-right: 20px; 
+    cursor: pointer;
+}
+#check:checked ~ ul{
+    margin-left: 0px;
+    transition: all ease .5s;
+}
+
+}
+
